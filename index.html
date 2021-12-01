@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .showhim {
+            display: none;
+        }
+        .showme{
+            display: block;
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+        }
+        .showme:hover .showhim{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="showme">
+    <div class="showhim"><a href="${pageContext.request.contextPath}/Administrator/administratorlogin">管理员</a></div>
+</div>
+</body>
+</html>
